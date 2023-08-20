@@ -1,306 +1,634 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Webstudio </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/reset.css" />
-<link rel="stylesheet" href="./css/styles.css"/>
-</head>
-<body class="primary-page">
-  <header class="global-header container">
-    <div class="container-nav">
-      <div class="webstudio">
-        <a href="index.html" class="logo">
-          <span class="studio"><span class="web">Web</span>Studio</span>
-        </a>
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="index.html" class="studio-portfolio">Studio</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
+  <body>
+
+    <div class="js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <nav class="drawer-nav-container">
+        <ul class="drawer-nav">
           <li>
-            <a
-              href="portfolio.html"
-              class="portfolio-header portfolio-activ current-page-portfolio"
-              >Portfolio</a
-            >
+            <a href="index.html" class="drawer-nav-page">Studio</a>
           </li>
-
           <li>
-            <a href="contacts.html" class="contacts-header">Contacts</a>
+            <a href="portfolio.html" class="drawer-nav-page">Portfolio</a>
+          </li>
+          <li>
+            <a href="contacts.html" class="drawer-nav-page">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul class="header-contacts">
-        <li class="mail-header-group">
-          <a
-            href="mailto:info@devstudio.com"
-            class="contacts header-contacts-mail"
-            ><span class="header-icon header-contacts-mail"
-              ><svg class="mail">
-                <use
-                  href="./icons/symbol-defs.svg#icon-envelope-hover"
-                  aria-label="Mail"
-                ></use>
-              </svg> </span
+
+      <ul class="drawer-contacts">
+        <li>
+          <a href="tel:+12127724150" class="drawer-phone">+1 212-772-4150</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="drawer-email"
             >info@devstudio.com</a
           >
         </li>
-        <li class="phone-header-group">
-          <a href="tel:+12127724150" class="contacts header-contacts-phone"
-            ><span class="header-icon header-contacts-phone"
-              ><svg class="phone-number">
-                <use
-                  href="./icons/symbol-defs.svg#icon-smartphone"
-                  aria-label="Phone number"
-                ></use>
-              </svg> </span
-            >+1 212-772-4150</a
-          >
+      </ul>
+
+      <ul class="drawer-social-links">
+        <li class="">
+          <a
+            href="https://www.instagram.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Instagram"
+            >Instagram
+          </a>
+        </li>
+        <li>
+          <svg class="vertical-line" width="1px" height="22px">
+            <use href="./icons/symbol-defs.svg#icon-line"></use>
+          </svg>
+        </li>
+        <li class="">
+          <a
+            href="https://twitter.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Twitter"
+            >Twitter
+          </a>
+        </li>
+        <li>
+          <svg class="vertical-line" width="1px" height="22px">
+            <use href="./icons/symbol-defs.svg#icon-line"></use>
+          </svg>
+        </li>
+        <li class="">
+          <a
+            href="https://www.facebook.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Facebook"
+            >Facebook
+          </a>
+        </li>
+        <li>
+          <svg class="vertical-line" width="1px" height="22px">
+            <use href="./icons/symbol-defs.svg#icon-line"></use>
+          </svg>
+        </li>
+        <li class="">
+          <a
+            href="https://www.linkedin.com/"
+            class="drawer-social-link"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            aria-label="Linkedin"
+            >Linkedin
+          </a>
         </li>
       </ul>
     </div>
-  </header>
-    </header>
-    <main>
-        <div class="buttons-portofolio">
-                <button class="button-portofolio-menu">All</button>
-                <button class="button-portofolio-menu">Web-sites</button>
-                <button class="button-portofolio-menu">Apps</button>
-                <button class="button-portofolio-menu">Design</button>
-                <button class="button-portofolio-menu">Marketing</button>
-            </div>
-        <section class="portofolio-section">
 
-<ul class="firts-line"> 
-            <div class="images-portoflio">
-           <li class="boxes">
-            <div class="animation">
-            <img  src="images/technoduck.jpg" />
-            <div class="overlay">
-              <p class="overlay-text">
-                Technoduck is a state-of-the-art coronavirus distribution
-                platform. Companies use this platform for digital espionage
-                and attacks on competitors' secure servers.
-              </p>
-            </div>
-            </div>
-               <div class="portofolio-images-text" >
-                <span class="portofolio-images-title">Technoduck</span>
-                
-            <em class="portofolio-images-description">Web-siter</em>
-          </div>
-        </li>
-            </div>
-            <div class="images-portoflio">
-           <li class="boxes">
-            <div class="animation">
-            <img src="images/poster.jpg" >
-            <div class="overlay">
-              <p class="overlay-text">
-               
-              </p>
-            </div>
-            </div>
-               <div class="portofolio-images-text" >
-           
-           <span class="portofolio-images-title">Poster New Orlean vs Golden Stars</span>
-           
-           <em class="portofolio-images-description">Design</em>
-        </li>
-            </div>
-           <div class="images-portoflio">
-            <li  class="boxes">
-              <div class="animation">
-                <img src="images/seafood.jpg" >
+    <header class="header container">
+      <div class="header-container">
+        <h1 class="logo-title">
+          <a href="index.html" class="logo active"><span>Web</span>Studio</a>
+        </h1>
+
+        <div class="header-text">
+
+          <nav class="navigation">
+            <ul class="navigation-links">
+              <li>
+                <a href="index.html" class="navigation-link active">Studio</a>
+              </li>
+              <li>
+                <a
+                  href="portfolio.html"
+                  class="navigation-link active  active-page"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="contacts.html" class="navigation-link active"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="contacts">
+            <li class="active">
+              <a class="contact active" href="mailto:info@devstudio.com">
+                <svg width="16px" height="10px">
+                  <use href="./icons/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="active">
+              <a class="contact active" href="tel:+12127724150">
+                <svg width="10px" height="16px">
+                  <use href="./icons/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +1 212-772-4150
+              </a>
+            </li>
+          </ul>
+
+
+
+        </div>
+        <button class="menu-button js-open-menu">
+          <svg width="40px" height="40px">
+            <use href="./icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+
+    <section class="section94px">
+      <ul class="filter-button-set">
+        <li><button type="button" class="filter-button">All</button></li>
+        <li><button type="button" class="filter-button">Web-sites</button></li>
+        <li><button type="button" class="filter-button">Apps</button></li>
+        <li><button type="button" class="filter-button">Design</button></li>
+        <li><button type="button" class="filter-button">Marketing</button></li>
+      </ul>
+
+      <div class="photo-container">
+        <ul class="photo-section">
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img11-d.jpg    370w,
+                    ./images/img11-d-2x.jpg 740w,
+                    ./images/img11-t.jpg     354w,
+                    ./images/img11-t-2x.jpg  708w,
+                    ./images/img11-m.jpg     450w,
+                    ./images/img11-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img11-d.jpg"
+                  alt="open laptop with a website page"
+                  width="370"
+                  height="294"
+                />
                 <div class="overlay">
-                  <p class="overlay-text">
-                  
+                  <p>
+                    Technoduck is a state-of-the-art coronavirus distribution
+                    platform. Companies use this platform for digital espionage
+                    and attacks on competitors' secure servers.
                   </p>
                 </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Technoduck</h3>
+                <p class="subject-portfolio">Web-site</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img22-d.jpg    370w,
+                    ./images/img22-d-2x.jpg 740w,
+                    ./images/img22-t.jpg     354w,
+                    ./images/img22-t-2x.jpg  708w,
+                    ./images/img22-m.jpg     450w,
+                    ./images/img22-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img22-d.jpg"
+                  alt="basketball poster"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quam necessitatibus architecto minus! Deserunt nemo tempore
+                    consequatur qui dolore aperiam voluptate.
+                  </p>
                 </div>
-                   <div class="portofolio-images-text" >
-            <span class="portofolio-images-title">Seafood Restaurant</span> 
-            
-            <em class="portofolio-images-description">Apps</em>
-        </li>
-                
-           </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">
+                  Poster New Orlean vs Golden Star
+                </h3>
+                <p class="subject-portfolio">Design</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img33-d.jpg    370w,
+                    ./images/img33-d-2x.jpg 740w,
+                    ./images/img33-t.jpg     354w,
+                    ./images/img33-t-2x.jpg  708w,
+                    ./images/img33-m.jpg     450w,
+                    ./images/img33-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img33-d.jpg"
+                  alt="Seafod restaurant logo"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Officia minus maxime eum dicta reiciendis repudiandae quis
+                    aliquam odit, quo deserunt.
+                  </p>
+                </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Seafood Restaurant</h3>
+                <p class="subject-portfolio">Apps</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img4-d.jpg    370w,
+                    ./images/img4-d-2x.jpg 740w,
+                    ./images/img4-t.jpg     354w,
+                    ./images/img4-t-2x.jpg  708w,
+                    ./images/img4-m.jpg     450w,
+                    ./images/img4-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img4-d.jpg"
+                  alt="Headphones"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facere aspernatur pariatur enim voluptates suscipit ex
+                    architecto officia labore reprehenderit porro.
+                  </p>
+                </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Project Prime</h3>
+                <p class="subject-portfolio">Marketing</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img5-d.jpg    370w,
+                    ./images/img5-d-2x.jpg 740w,
+                    ./images/img5-t.jpg     354w,
+                    ./images/img5-t-2x.jpg  708w,
+                    ./images/img5-m.jpg     450w,
+                    ./images/img5-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img5-d.jpg"
+                  alt="2 cardboard boxes"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Exercitationem officia temporibus repellendus commodi quae
+                    quod, soluta inventore expedita nulla in!
+                  </p>
+                </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Project Boxes</h3>
+                <p class="subject-portfolio">Apps</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img6-d.jpg    370w,
+                    ./images/img6-d-2x.jpg 740w,
+                    ./images/img6-t.jpg     354w,
+                    ./images/img6-t-2x.jpg  708w,
+                    ./images/img6-m.jpg     450w,
+                    ./images/img6-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img6-d.jpg"
+                  alt="Apple monitor"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum aliquid magnam facilis qui voluptas laudantium,
+                    officia perferendis recusandae laborum inventore?
+                  </p>
+                </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Inspiration has no Borders</h3>
+                <p class="subject-portfolio">Web-site</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img7-d.jpg    370w,
+                    ./images/img7-d-2x.jpg 740w,
+                    ./images/img6-t.jpg     354w,
+                    ./images/img6-t-2x.jpg  708w,
+                    ./images/img7-m.jpg     450w,
+                    ./images/img7-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img7-d.jpg"
+                  alt="open brochure"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Obcaecati commodi perspiciatis nihil voluptates eum minima,
+                    soluta fuga accusantium asperiores aperiam?
+                  </p>
+                </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Limited Edition</h3>
+                <p class="subject-portfolio">Design</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img8-d.jpg    370w,
+                    ./images/img8-d-2x.jpg 740w,
+                    ./images/img8-t.jpg     354w,
+                    ./images/img8-m-2x.jpg  708w,
+                    ./images/img8-m.jpg     450w,
+                    ./images/img8-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img8-d.jpg"
+                  alt="cardboard tag"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    sunt quaerat vel, magnam culpa error saepe provident
+                    architecto omnis suscipit?
+                  </p>
+                </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Project LAB</h3>
+                <p class="subject-portfolio">Marketing</p>
+              </div>
+            </div>
+          </li>
+          <li class="item">
+            <div class="portfolio-card">
+              <div class="box-overlay">
+                <img
+                  class="photo"
+                  srcset="
+                    ./images/img9-d.jpg    370w,
+                    ./images/img9-d-2x.jpg 740w,
+                    ./images/img9-t.jpg     354w,
+                    ./images/img9-t2x.jpg  708w,
+                    ./images/img9-m.jpg     450w,
+                    ./images/img9-m-2x.jpg  900w
+                  "
+                  sizes="(min-width: 1158px) 370px,
+            (min-width: 768px) 354px,
+            450px"
+                  src="./images/img9-d.jpg"
+                  alt="hands working on laptop"
+                  width="370"
+                  height="294"
+                />
+                <div class="overlay">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Cupiditate delectus repellendus accusantium eum voluptatum
+                    neque in quisquam tenetur eos perferendis.
+                  </p>
+                </div>
+              </div>
+              <div class="caption">
+                <h3 class="title-portfolio">Growing Business</h3>
+                <p class="subject-portfolio">Apps</p>
+              </div>
+            </div>
+          </li>
         </ul>
-        <ul class="second-line"> 
-          <div class="images-portoflio">          
-             <li  class="boxes"> 
-              <div class="animation">
-              <img src="images/project.jpg" />
-              <div class="overlay">
-                <p class="overlay-text">
-               
-                </p>
-              </div>
-              </div>
-                 <div class="portofolio-images-text" >
-              <span class="portofolio-images-title">Project Prime</span> 
-              
-          <em class="portofolio-images-description">Marketing</em>
-        </div>
-      </li>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      <section class="footer-text">
+        <section class="footer-text-gap">
+          <section class="footer-adress-contacts">
+            <h2 class="logo-title">
+              <a class="logo-footer active" href="index.html">
+                <span>Web</span>Studio</a
+              >
+            </h2>
+            <ul class="contacts-footer">
+              <li>
+                <address class="address">
+                  <a
+                    href="https://goo.gl/maps/ySGtrkY3DtCxrfNZ6"
+                    class="address"
+                    target="_blank"
+                    rel="nofollow noopener noreferrer"
+                    aria-label="695 Park Ave, NY 10065, USA"
+                  >
+                    695 Park Ave, NY 10065, USA
+                  </a>
+                </address>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contact-footer active"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+12127724150" class="contact-footer active"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="center-column">
+            <h3 class="find-us-on-text">Find us on</h3>
+
+            <ul class="footer-icons-list">
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./icons/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://twitter.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Twitter"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./icons/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./icons/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="icon-footer"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  aria-label="Linkedin"
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <form class="subscribe">
+          <label class="subscribe-label" for="subscribe-email">
+            Subscribe to the newsletter</label
+          >
+          <div class="subscribe-area">
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              id="subscribe-email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="subscribe-btn" type="submit">
+              Subscribe
+              <svg height="24px" width="24px">
+                <use href="./icons/symbol-defs.svg#icon-send"></use>
+              </svg>
+            </button>
           </div>
-          
-        <div class="images-portoflio">
-            <li  class="boxes">
-              <div class="animation">
-                <img src="images/boxes.jpg" >
-                <div class="overlay">
-                  <p class="overlay-text">
-                
-                  </p>
-                </div>
-                </div>
-                   <div class="portofolio-images-text" >
-       <span class="portofolio-images-title">Project Boxes</span>
-       
-       <em class="portofolio-images-description">Apps</em>
-    </li>
-        </div>
-       <div class="images-portoflio">
-        <li  class="boxes">
-          <div class="animation">
-            <img src="images/inspiration.jpg" >
-            <div class="overlay">
-              <p class="overlay-text">
-                
-              </p>
-            </div>
-            </div>
-               <div class="portofolio-images-text" >
-        <span class="portofolio-images-title">Inspiration has no Borders</span> 
-        
-        <em class="portofolio-images-description">Web-site</em>
-               </div>
-    </li>
-       </div>
-    </ul>
-    <ul class="third-line"> 
-    <div class="images-portoflio"> 
-        <li  class="boxes">
-          <div class="animation">
-            <img src="images/limited.jpg" />
-            <div class="overlay">
-              <p class="overlay-text">
-              
-              </p>
-            </div>
-            </div>
-               <div class="portofolio-images-text" >
-        <span class="portofolio-images-title">Limited Edition</span> 
-        
-    <em class="portofolio-images-description">Design</em>
-               </div>
-</li>
-    </div>
-    <div class="images-portoflio">
-        <li  class="boxes">
-          <div class="animation">
-            <img src="images/lab.jpg" >
-            <div class="overlay">
-              <p class="overlay-text">
-               
-              </p>
-            </div>
-            </div>
-               <div class="portofolio-images-text" >
-   <span class="portofolio-images-title">Project LAB</span>
-   
-   <em class="portofolio-images-description">Marketing</em>
-               </div>
-</li>
-    </div>
-   <div class="images-portoflio">
-    <li  class="boxes">
-      <div class="animation">
-        <img src="images/growing.jpg" >
-        <div class="overlay">
-          <p class="overlay-text">
-        
-          </p>
-        </div>
-        </div>
-           <div class="portofolio-images-text" >
-    <span class="portofolio-images-title">Growing Business</span> 
-    
-    <em class="portofolio-images-description">Apps</em>
-           </div>
-</li>
-   </div>
-</ul>
-</section>
-</main>
-<footer class="footer">
-  <section class="footer-text">
-    <div class="footer-text">
-      <div class="footer-description">
-      <span class="web-footer">Web</span>Studio
-      <address class="footer-adress">
-          <span>695 Park Ave, NY 10065, USA</span>
-          <div class="footer-contacts">
-          </br>
-          <span>info@devstudio.com</span>
-        </br>
-          <span>+1 212-772-4150</span>
-      </div>
-      </address>
-  </div>
-    <div class="footer-social-link">
-      <h3 class="footer-h3">FIND US ON</h3>
-      <div class="footer-icons-list">
-        <a href="https://www.instagram.com/" class="footer-icon" aria-label="Instagram">
-          <svg>
-            <use href="./icons/symbol-defs.svg#icon-instagram"></use>
-          </svg>
-        </a>
-        <a href="https://www.twitter.com/" class="footer-icon" aria-label="Twitter">
-          <svg>
-            <use href="./icons/symbol-defs.svg#icon-twitter"></use>
-          </svg>
-        </a>
-        <a href="https://www.facebook.com/" class="footer-icon" aria-label="Facebook">
-          <svg>
-            <use href="./icons/symbol-defs.svg#icon-facebook"></use>
-          </svg>
-        </a>
-        <a href="https://www.linkedin.com/" class="footer-icon" aria-label="Linkedin">
-          <svg>
-            <use href="./icons/symbol-defs.svg#icon-linkedin"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-  <form class="subscribe">
-    <label class="subscribe-label" for="subscribe-email">
-      Subscribe to the newsletter</label>
-    <div class="subscribe-area">
-      <input
-        class="subscribe-input"
-        type="email"
-        name="email"
-        id="subscribe-email"
-        placeholder="E-mail"
-        required
-      />
-      <button class="subscribe-btn" type="submit">
-        Subscribe
-        <svg height="24px" width="24px">
-          <use href="./icons/symbol-defs.svg#icon-send"></use>
-        </svg>
-      </button>
-    </div>
-  </form>
-  </footer>
-</section>
-</body>
-</html>     
+        </form>
+      </section>
+    </footer>
+
+     <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
