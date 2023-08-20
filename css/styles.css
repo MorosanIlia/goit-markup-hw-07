@@ -1456,7 +1456,9 @@ img {
     height: auto;
     width: 270px;
   }
-
+.container{
+margin-bottom: 94px;
+}
   
 
   .regular-customers-icons-list {
